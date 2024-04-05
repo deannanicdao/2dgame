@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712322350
+::res://::1712326553
 bullet.gd::GDScript::-1::1712155961::0::1::::<>Area2D<>::
 bullet.tscn::PackedScene::8686113638770766435::1712158923::0::1::::<><>::uid://dftkbqwsfd68r::::res://pistol/projectile.png<>res://bullet.gd
 default_bus_layout.tres::AudioBusLayout::6564268947468103023::1695668179::0::1::::<><>::
@@ -8,11 +8,11 @@ gun.tscn::PackedScene::939312262930957318::1712158923::0::1::::<><>::res://gun.g
 HurtBox.gd::GDScript::-1::1712157828::0::1::::<>Area2D<>::
 icon.png::CompressedTexture2D::621515402784007901::1695668179::1712134062::1::::<><>::
 Mob.gd::GDScript::-1::1712160026::0::1::::<>CharacterBody2D<>::
-mob.tscn::PackedScene::6017715672326331118::1712168250::0::1::::<><>::res://Mob.gd<>uid://ogik4s70pgwl::::res://characters/slime/slime.tscn
+mob.tscn::PackedScene::6017715672326331118::1712324044::0::1::::<><>::res://Mob.gd<>uid://ogik4s70pgwl::::res://characters/slime/slime.tscn
 pine_tree.tscn::PackedScene::4124035476887234100::1712158923::0::1::::<><>::uid://b7rhtttevhxtj::::res://characters/ground_shadow.png<>uid://caqfk2xng5v5u::::res://trees/pine_tree.png
 player.gd::GDScript::-1::1712168248::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::330505558797209562::1712168250::0::1::::<><>::uid://pbmyh1qru7p::::res://characters/happy_boo/happy_boo.tscn<>res://player.gd<>uid://nnalod0cxydi::::res://gun.tscn<>res://HurtBox.gd
-survivor_game.tscn::PackedScene::5960224296637303198::1712168250::0::1::::<><>::uid://eydm4jmmvf6a::::res://player.tscn<>uid://by0yi5u2vu0aa::::res://pine_tree.tscn<>uid://cr0a5saadp6f7::::res://mob.tscn
+player.tscn::PackedScene::330505558797209562::1712324043::0::1::::<><>::uid://pbmyh1qru7p::::res://characters/happy_boo/happy_boo.tscn<>res://player.gd<>uid://nnalod0cxydi::::res://gun.tscn<>res://HurtBox.gd
+survivor_game.tscn::PackedScene::5960224296637303198::1712324043::0::1::::<><>::uid://eydm4jmmvf6a::::res://player.tscn<>uid://by0yi5u2vu0aa::::res://pine_tree.tscn<>uid://cr0a5saadp6f7::::res://mob.tscn
 ::res://addons/::1695668179
 ::res://addons/colorpicker_presets/::1695668179
 colorpicker_presets.gd::GDScript::-1::1695668179::0::1::::<>EditorPlugin<>::

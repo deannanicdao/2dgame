@@ -1,7 +1,9 @@
+Timer
+PathFollow2D
+Path2D
 ProgressBar
 CollisionShape2D
 Area2D
-Timer
 Marker2D
 CanvasLayer
 Camera2D

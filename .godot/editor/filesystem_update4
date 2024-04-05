@@ -1,3 +1,4 @@
-res://player.tscn
 res://survivor_game.tscn
+res://survivor_game.gd
+res://player.tscn
 res://mob.tscn
