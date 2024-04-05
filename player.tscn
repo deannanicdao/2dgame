@@ -1,0 +1,77 @@
+[gd_scene load_steps=9 format=3 uid="uid://eydm4jmmvf6a"]
+
+[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_aw85r"]
+[ext_resource type="Script" path="res://player.gd" id="1_u5qmd"]
+[ext_resource type="PackedScene" uid="uid://nnalod0cxydi" path="res://gun.tscn" id="3_nsbh7"]
+[ext_resource type="Script" path="res://HurtBox.gd" id="4_6q3s1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mm0a6"]
+size = Vector2(50, 47)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g8p7t"]
+size = Vector2(63, 58)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7cbgk"]
+bg_color = Color(0.0941176, 0.223529, 0.270588, 0.443137)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_im238"]
+bg_color = Color(0.32549, 0.686275, 0.454902, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_u5qmd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 1
+position = Vector2(1, -31)
+shape = SubResource("RectangleShape2D_mm0a6")
+debug_color = Color(0.145098, 0.568627, 0.831373, 0.419608)
+
+[node name="HappyBoo" parent="." instance=ExtResource("1_aw85r")]
+unique_name_in_owner = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Gun" parent="." instance=ExtResource("3_nsbh7")]
+position = Vector2(24, -52)
+
+[node name="HurtBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+light_mask = 0
+visibility_layer = 2
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("4_6q3s1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(1, -32)
+shape = SubResource("RectangleShape2D_g8p7t")
+debug_color = Color(0.831373, 0.333333, 0.541176, 0.419608)
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -140.0
+offset_top = -140.0
+offset_right = 139.0
+offset_bottom = -113.0
+theme_override_styles/background = SubResource("StyleBoxFlat_7cbgk")
+theme_override_styles/fill = SubResource("StyleBoxFlat_im238")
+value = 100.0
+show_percentage = false
