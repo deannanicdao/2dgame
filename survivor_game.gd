@@ -17,3 +17,9 @@ func spawn_mob():
 
 func _on_timer_timeout():
 	spawn_mob()
+
+
+func _on_player_health_depleted():
+	%GameOverScreen.visible = true
+	# access the scene tree (root of game)
+	get_tree().paused = true
